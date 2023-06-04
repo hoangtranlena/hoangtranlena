@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background-color: #e9d3d3;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.logo img{
+    height: 100%;
+    width: 150px;
+   
+}
+#header {
+    width: 100%;
+    height: 30px;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+#search{
+    background-color: #fff;
+    border: 1px solid black;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#search .icon{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#search .box{
+    border: none;
+    outline: none;
+    width: 300px;
+}
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item :hover{
+    border-bottom: 2px solid black;
+
+}
+
+#menu .item {
+    margin:0px 20px;
+}
+
+
+
+#menu .item a{
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+}
+
+
+#actions{
+    display: flex;
+}
+
+#actions .item{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 22px;
+}
+
+#actions .item a{
+    color: black;
+}
+
+#banner{
+    width: 100%;
+    height: 463px;
+    margin-top: 40px;
+    display: flex;
+    padding: 0px 133px;
+    position: relative;
+    background-color: rgb(255, 241, 241);
+}
+
+#banner .box-left, #banner .box-right{
+    width: 50%;
+}
+
+#banner .box-left h2{
+    font-size: 48px;
+    margin-top: 75px;
+    color: black;
+}
+
+#banner .box-left p{
+    color: black;
+}
+
+#banner .box-left button{
+    width: 190px;
+    height: 40px;
+    margin-top: 45px ;
+    background: #1d1d1d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#banner .box-left button:hover{
+    background: rgb(226, 138, 163);
+    font-size: large;
+}
+
+#banner .box-right{
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#banner .box-right img{
+    width: 150px;
+    border-radius: 20px;
+    margin-right: 20px;
+    animation: animation 3s infinite linear;
+}
+
+#banner .box-right img:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2)
+{
+    
+    animation-delay: 1s;
+}
+
+@keyframes animation{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+
+.left{
+    width: 50%;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 40px;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition-delay: 100s;
+    padding-left: 150px;
+}
+
+.right{
+    width: 50%;
+    opacity: 0;
+    transform: translateX(200px);
+    padding-top: 5px;
+    transition-delay: 100s;
+}
+
+.right img{
+    width: 600px;
+    border-radius: 50%;
+}
+
+#container:hover .right{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    transform: translateX(56px);
+}
+
+#container:hover .left{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    transform: translateX(50px);
+}
+.to-bottom {
+    
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+.to-bottom a i{
+    font-size: 40px;
+    color: #e9d3d3;
+}
+
+.start{
+    color: rgb(159, 205, 230);
+}
+
+#wp-products{
+    padding-top: 116px;
+    padding-bottom: 78px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+
+#wp-products h2{
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 32px;
+    color: #626a67;
+    
+}
+
+#list-products{
+    display: grid;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 374px 374px;
+    gap: 40px;
+}
+
+#list-products .item{
+    width: 290px;
+    height: 374px;
+    background: rgb(255, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#list-products .item:hover{
+    border:1px solid #626a67;
+}
+
+#list-products .item img{
+    width: 250px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 17px;
+}
+
+#list-products .item .start{
+    display: flex;
+    margin: 0px auto;
+    width: 40%;
+    letter-spacing: 5px;
+    padding-top: 5px;
+}
+
+#list-products .item .name{
+    text-align: center;
+    color: rgb(231, 138, 164);
+    font-weight: bold;
+    margin-top: 21px;
+}
+
+#list-products .item .desc{
+    text-align: center;
+    color: #1b1818;
+}
+
+#list-products .item .price{
+    text-align: center;
+    color: rgb(231, 138, 164);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:rgb(231, 138, 164);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+#saleoff {
+    width: 100%;
+    display: flex;
+    height: 322px;
+}
+#saleoff .box-left ,#saleoff .box-right {
+    width: 50%;
+}
+#saleoff .box-left {
+    background:#666966;
+    text-align: center;
+    min-height: 322px;
+}
+
+#saleoff .box-left h1 {
+    padding-top:38px;
+}
+#saleoff .box-left span:nth-child(1)
+{
+    color:#fff;
+    font-size:50px;
+}
+
+#saleoff .box-left span:nth-child(2)
+{
+    color:rgb(233, 165, 165);
+    font-size:128px;
+}
+
+#saleoff .box-right {
+    background-image:url("Img/GiamGia.jpg");
+}
+
+
+#comment {
+    width: 1012px;
+    height: 478px;
+    margin:0px auto;
+    margin-top:184px;
+    margin-bottom: 50px;
+}
+
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:32px;
+    color:#090a09;
+}
+
+#comment .prev i{
+    font-size: 30px;
+    color: #020202;
+}
+
+#comment .next i{
+    font-size: 30px;
+    color: #020202;
+}
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+    
+}
+
+#list-comment {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+}
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#7d807d;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+#list-comment .item .avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+}
+
+#list-comment .item .stars {
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+    margin-top:32px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: #201f1f;
+}
+
+#list-comment .item .text {
+    padding:20px 50px;
+    color:#fff;
+   
+}
+
+#footer {
+    width: 100%;
+    background:#666966;
+    height: 322px;
+    margin-top:338px;
+    padding:0px 63px;
+    padding-top:57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color:#fff;
+}
+
+
+#footer .box .quick-menu {
+    margin-top:40px;
+
+}
+
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background:transparent;
+    padding-left:20px;
+    color:#fff;
+    margin-top:30px;
+}
+
+#footer .box form button {
+    background:#4d4c4c;
+    box-shadow: 5px 5px 4px rgb(29, 28, 28);
+    width: 163px;
+    height: 38px;
+    margin-top:29px;
+    color:#fff;
+}
+
+.iconLienHe{
+    padding-top: 30px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.iconLienHe a
+{
+    text-decoration: none;
+}
+
+
+
+#SPChiTiet{
+    display: grid;
+    margin: 100px 20px 100px 20px;
+    background-color: rgb(255, 241, 241);
+    border-radius: 30px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'L R';
+}
+
+#SP{
+   grid-area: L; 
+}
+
+#product1 img{
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 600px;
+}
+
+#products3{
+    padding-left: 58px;
+}
+
+#products3 img{
+    width: 160px;
+}
+
+
+
+#introduce{
+    line-height: 50px;
+    padding-top: 10px;
+    grid-area: R;
+}
+
+
+.Mua{
+    padding-top: 30px;
+    text-align: center;
+}
+.Mua:hover{
+    transform: scale(1.1);
+}
+.Mua a{
+    color: #090a09;
+    text-decoration: none;
+}
+#introduce button{
+    border-radius: 15px;
+    background-color: pink;
+    width: 200px;
+    height: 40px;
+}
+
+#FormDK{
+    border-radius: 30px;
+    background-color: #efe9e9;
+    margin: 100px auto 100px auto;
+    padding: 10px 25px 10px 5px;
+    height: 500px;
+    width: 400px;
+    line-height: 40px;
+    text-align: right;
+}
+
+
+input[type=text], input[type=password]{
+    width: 60%;
+    height: 22px;
+    border-radius: 10px;
+    outline: none; 
+    border: .2px solid #020202;
+}
+#FormDK h1,h3 ,h3 a{
+    text-align: center;
+    text-decoration: none;
+}
+
+#Sign{
+    padding-top: 35px;
+    text-align: center;
+}
+
+#Sign button{
+    background-color: pink;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.iconForm{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.iconForm a{
+    color: pink;
+    text-decoration: none;
+}
+
+
+#FormDN{
+    border-radius: 30px;
+    background-color: #efe9e9;
+    margin: 100px auto 100px auto;
+    padding: 10px 0px 10px 5px;
+    height: 380px;
+    width: 400px;
+    line-height: 40px;
+    text-align: right;
+}
+
+#FormDN h1,h3 ,h3 a{
+    text-align: center;
+    text-decoration: none;
+}
+
+#FormDN p{
+    padding-right: 50px;
+}
+
+#GioHang{
+    margin: auto;
+    margin-top: 100px;
+    height: 500px;
+    width: 800px;
+    font-size: 20px;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    background: #efe9e9;
+}
+table tr td{
+    border: 3px solid #e9d3d3;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: larger;
+   
+}
+
+#GioHang img {
+    width: 200px;
+}
+
+#Sum{
+    margin-top: 10px;
+    background: #efe9e9;
+    width: 400px;
+    padding: 20px;
+    float: right;
+    line-height: 50px;
+}
+#Sum button{
+    background-color: #e9d3d3;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    border-radius: 20px;
+}
+
+#Sum .DatHang:hover{
+    background-color: #deb1b1;
+}
+
+#Blog {
+    text-align: center;
+    padding: 0px 300px;
+}
+
+#Blog p{
+    font-size: 30px;
+}
+
+#Blog h3{
+    font-size: 30px;
+    line-height: 60px;
+}
+@media screen and (max-width: 1195px) {
+    #search{
+        display: none;
+    }
+
+    #banner{
+        width: 100%;
+        height: 650px;
+        margin-top: 40px;
+        display: inline-block;
+        padding: 0px 133px;
+        position: relative;
+        background-color: rgb(255, 241, 241);
+        vertical-align: middle;
+    }
+
+    #banner .box-left, #banner .box-right{
+        width: 100%;
+        padding: 10px;
+    }
+    
+
+    #container{
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        padding: 10px 10px;
+        
+    }
+
+    .left{
+        width: 100%;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        font-size: 40px;
+        opacity: 0;
+        transform: translateX(-200px);
+        transition-delay: 100s;
+        padding-left: 30px;
+    }
+    
+    .right {
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    #comment {
+        display: none;
+    }
+    
+    #saleoff {
+        width: 100%;
+        display: flex;
+        height: 322px;
+        padding-top: 20px;
+    }
+   
+    #footer {
+        width: 100%;
+        background:#666966;
+        height: 100%;
+        margin-top:338px;
+        padding:0px 63px;
+        padding-top:57px;
+        display: inline-block;
+    }
+    #footer .box .logo img{
+        width: 70%;
+    }
+    #footer .box{
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    #list-products{
+        display: grid;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+
+    #list-products .item{
+        width: 100%;
+        height: 374px;
+        background: rgb(255, 241, 241);
+        border-radius: 10px;
+        margin-bottom: 50px;
+        font-size: larger;
+    }
+    
+    .start{
+        color: rgb(159, 205, 230);
+        padding-left: 30px;
+    }
+
+    #SPChiTiet{
+        display: inline-block;
+        height: 1150px;
+    }
+
+    #SP{
+        grid-area: L; 
+        padding: 45px;
+     }
+     
+     #introduce{
+         line-height: 50px;
+         padding-top: 10px;
+         text-align: center;
+         font-size: larger;
+         grid-area: R;
+     }
+
+     #GioHang{
+        width: 600px;
+        font-size: 15px;
+    }
+
+    
+    #GioHang img {
+        width: 100px;
+    }
+
+    table tr td{
+        border: 3px solid #e9d3d3;
+        padding: 10px 25px;
+        font-weight: bold;
+        font-size: larger;
+       
+    }
+    
+    #Sum{
+        width: 300px;
+    }
+    #Sum button{
+        width: 150px;
+        height: 40px;
+    }
+
+    #Blog {
+        text-align: center;
+        padding: 0px 30px;
+    }
+}
